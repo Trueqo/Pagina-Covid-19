@@ -2,16 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 4px black solid;
+    outline: 1px red solid;
 }
 
 :root{
     --azulOscuro:rgb(23, 17, 135);
     --azulClaro:rgb(5,151,183);
-}
-
-.container{
-    position: relative;
 }
 
 .partOne{
@@ -38,15 +34,70 @@
 
 
 
-
-
-
 header{
     
     color: black;
     grid-column-start: 1;
     grid-column-end: -1;
+    height: 30%;
+    
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+
+
+.logoCovidMap{
+    height: 100%;
+    
+}
+
+.logoCovidMap img{
+    height: 100%;
+}
+
+
+nav ul{
+    display: flex;
+    position: relative;
+    list-style: none;
+    right: 8%;
+
+}
+
+nav ul li{
+    display: flex;
+    padding-left: 4em;
+    
+}
+a.opc {
+    display: flex;
+    color: white;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+a.opcT{
+    display: flex;
+    border: 1px blue solid;
+    background-color: var(--azulOscuro);
+    border-radius:20px;
+    height: 2.5em;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 section{
     
@@ -89,7 +140,12 @@ aside{
 
         grid-column-start: 1;
         grid-column-end: -1;
+        z-index: 1;
+        
     }
+
+    
+
     
     section{
 
