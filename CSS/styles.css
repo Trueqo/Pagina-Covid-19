@@ -1,31 +1,62 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    outline: 4px black solid;
+}
+
+:root{
+    --azulOscuro:rgb(23, 17, 135);
+    --azulClaro:rgb(5,151,183);
+}
+
+.container{
+    position: relative;
 }
 
 .partOne{
-    background-color: aqua;
+    
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
+    
+}
+.partOne::before{
+    content:"";
+    display:block;
+    position:absolute;
+    background-image: linear-gradient(to right, rgb(23, 17, 135,0.7), rgb(0, 247, 255,0.7)), url("../img/fondo.jpg");
+    background-size: cover;
+    background-position-y: 57%;
+    width:100%;
+    height:100%;
+    z-index:-1;
+
 }
 
 
+
+
+
+
 header{
-    background-color: rosybrown ;
+    
+    color: black;
     grid-column-start: 1;
     grid-column-end: -1;
 }
 
 section{
-    background-color: green;
+    
+    color: white;
 }
 
 aside{
-    background-color: blue;
+    
+    color: white;
+    
 }
 
 
@@ -35,34 +66,42 @@ aside{
 @media(max-width:640px){
 
     .partOne{
-        background-color: aqua;
         width: 100%;
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(3,1fr);
     }
+    .partOne::before{
+        content:"";
+        display:block;
+        position:absolute;
+        background-image: linear-gradient(to right, rgb(23, 17, 135,0.7), rgb(0, 247, 255,0.7)), url("../img/fondo.jpg");
+        background-size: cover;
+        background-position-y: 57%;
+        width:100%;
+        height:100%;
+        z-index:-1;
+    
+    }
 
     header{
-        background-color: rosybrown ;
+
         grid-column-start: 1;
         grid-column-end: -1;
     }
     
     section{
-        background-color: green;
+
         grid-column-start: 1;
         grid-column-end: -1;
     }
     
     aside{
-        background-color: blue;
+
         grid-column-start: 1;
         grid-column-end: -1;
     }
-
-
-
 
 }
 
