@@ -179,7 +179,7 @@ aside{
     color: white;
     
 }
-
+/* ---------------- Clases  footer --------------- */
 .partNine {
     display: flex;
     width: 100%;
@@ -309,7 +309,7 @@ aside{
     position: absolute;
     color: white;
 }  
-
+/* ------------------ end cleses footer --------------- */
 
 @media(max-width:640px){
 
