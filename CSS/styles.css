@@ -221,7 +221,7 @@ aside{
 
 .wrapper{
     display:inline-flex;
-    margin-left: 25%;
+    margin-left: 27%;
     margin-top: 13%;
 }
 .wrapper .icon{
@@ -252,17 +252,35 @@ aside{
 }
     
 .footer-element ul {
-    position: absolute;
-    top: 30%;    
+    position: relative;
+    top: 5%;    
 }
 .footer-element ul li  {
+    
     list-style:none; 
 }
 .footer-element ul li a  {
     line-height: 2.5;
     color: #7b7a9f;
 }
+.quic-links {
+   
+    margin-left: 40%;
 
+}
+.about {
+    position: relative;
+    left: 15%;
+}
+.about2 {
+    position: relative;
+    left: -3%;
+}
+.help {
+    position: relative;
+    right: 30%;
+    
+}
 .copyright {
     border-top: 1px solid #223461;
     padding: 33px 0px;
