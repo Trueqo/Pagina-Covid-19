@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/sidebars.css">
+    <link rel="stylesheet" href="../CSS/stylesTracker.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main ">
+
+        <div class="row rowMain">
+
+            <div class="col-1 sidebar">
+                <div class="d-flex flex-column flex-shrink-0 bg-light sideBar" >
+                    <a href="" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
+                        <img src="../img/favicon.png"  width="50" height="50" class="rounded-circle">
+                    </a>
+                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                            <img src="../img/icon/pie-chart.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                            <img src="../img/icon/view-list.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+                            <img src="../img/icon/view-grid.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                            <img src="../img/icon/layout-tab.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                            <img src="../img/icon/layers-alt.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                            <img src="../img/icon/stats-up.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                            <img src="../img/icon/world.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                            <img src="../img/icon/comment.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link py-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                            <img src="../img/icon/flickr-alt.svg" width="30" height="30" >
+                        </a>
+                    </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="col section">
+                <p class="h2 ">
+                    COVID-19 Tracker
+                </p>
+                <div class="pText" id="totalC">
+                    
+                </div>
+                <div class="pText" id="activeC">
+                    
+                </div>
+                <div class="pText" id="recoveredC">
+                    
+                </div>
+                <div class="pText" id="deathsC">
+                    
+                </div>
+                <p class="h4">
+                    Top 10 country
+                </p>
+                <div id="topC">
+
+                </div>
+            </div>
+
+            <div class="col-8 aside container-fluid" >
+                    <!-- fila de selector de paises y actualización -->
+                <div class="row selectPais">
+
+                    <select class="form-select form-select-lg mb-3"  id="selectPaises" >
+                        
+                    </select>
+                </div>
+                    <!-- Siguiente fila datos y mapa -->
+                <div class="row">
+                    <div class="col datos-pais">
+                        <div class="col datos-PP">
+                            <div class="row datos-P" id="P1"></div>
+                            <div class="row datos-P" id="P2"></div>
+                            <div class="row datos-P" id="P3"></div>
+                        </div>
+                        <div class="col datos-PP">
+                            <div class="row datos-P" id="P4">1</div>
+                            <div class="row datos-P" id="P5">2</div>
+                            <div class="row datos-P" id="P6">3</div>
+                        </div>
+                    </div>
+                    <div class="col datos-pais">
+                        derecha
+                    </div>
+                </div>
+                <!-- ultima fila -->
+                <div class="row rowUltima">
+                    ultimaaa
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/sidebars.js"></script>
+    <script src="../script/main.js"></script>
+
+
+</body>
+
+
+</html>
