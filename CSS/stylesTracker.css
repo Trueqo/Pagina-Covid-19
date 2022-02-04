@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --fondo:rgb(247,248,252)
+    
+}
+
+.aside{
+    margin-right: -12px !important;
+    border: 1px black solid;
+}
+
+.main{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    height: 100vh;
+}
+
+.rowMain{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.sidebar{
+    display: flex;
+    padding:0;
+    background-color: red;
+}
+
+.sideBar{
+    width: 100%;
+}
+
+.col{
+    height: 100vh;
+}
+
+.selectPais{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--fondo);
+}
+
+.form-select{
+    width: 25%;
+    height: 40%;
+    margin-left: 3em;
+}
+
+
+.datos-pais{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    height: 60vh;
+    
+}
+
+.datos-PP{
+
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    height: 100%;
+    
+    
+    
+}
+
+.datos-P{
+    margin: 0 !important;
+    padding: 0 !important;
+    height:--;
+    
+    height: 33.33%;
+    
+}
+
+.rowUltima{
+    height: 20vh;
+}
+
+
+/* estilos para la segunda columna del tracker */
+
+.pText{
+    display: flex;
+    height: 3em;
+    margin: 1rem;
+    background-color: gray;
+    border-radius: 5px;
+    align-items:baseline;
+    justify-content: space-between;
+    padding:0.3em;
+}
+
+.pText p{
+
+    font-size:x-large;
+}
+
+/*------------- Clases del JS----------------- */
+
+.totalCC{
+    color: red;
+}
+
+.activeCC{
+    color: orange ;
+}
+
+.recoveredCC{
+    color: greenyellow;
+}
+
+.deathsCC{
+    color: blue;
+}
+/*----------------------------------------------- */
+
+
+.dataCountry{
+    background-color: var(--fondo);
+}
+
+
+
+.flag{
+    flex-direction: row;
+    width: 40px;
+    height: 30px;
+}
+
+
+
+
+

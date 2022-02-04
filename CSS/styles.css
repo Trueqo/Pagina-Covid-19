@@ -2,16 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 4px black solid;
+    
+    /* outline: 4px black solid;  */
 }
 
 :root{
     --azulOscuro:rgb(23, 17, 135);
     --azulClaro:rgb(5,151,183);
-}
-
-.container{
-    position: relative;
 }
 
 .partOne{
@@ -38,39 +35,314 @@
 
 
 
-
-
-
 header{
     
     color: black;
     grid-column-start: 1;
     grid-column-end: -1;
+    height: 20vh;
+    
+    
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+.logoCovidMap{
+    display: flex;
+    margin-left: 7%;
+}
+
+.logoCovidMap img{
+    height: 6vh;
+    left: 10%;
+}
+
+
+
+
+nav ul{
+    display: flex;
+    position: relative;
+    list-style: none;
+    right: 8%;
+
+}
+
+nav ul li{
+    display: flex;
+    padding-left: 4em;
+    
+}
+a.opc {
+    display: flex;
+    color: white;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+a.opcT{
+    display: flex;
+    border: 1px blue solid;
+    background-color: var(--azulOscuro);
+    border-radius:20px;
+    height: 2.5em;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 section{
-    
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
     color: white;
 }
+
+
+.titule-sectionOne{
+    position: absolute;
+    top:20vh;
+    left: 7%;
+    font-size: 4.2em;
+
+
+}
+
+.p-sectionOne {
+    position: absolute;
+    top: 60vh;
+    left: 7%;
+    font-size: 1em;
+
+}
+.report {
+    position: absolute;
+    width: 315px;
+    height: 75px;
+    top:80vh;
+    left: 7%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.data-cases {
+    
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 65%;
+    color: red;
+    font-size: x-large;
+}
+
+.data-active{
+    position: absolute;
+    
+    width: 50px;
+    height: 20px;
+    margin-top: 14%;
+    margin-left: 60%;
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 3px; /*espacio alrededor texto*/  
+    background-color: #ffc33e;
+    border-radius: 1px; /*bordes redondos*/
+    font-size: small;
+}
+
+.date-recovered {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    margin-top: 14%;
+    margin-left: 79%;
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 3px; /*espacio alrededor texto*/
+    background-color: #55df93;
+    border-radius: 2px; /*bordes redondos*/
+    font-size: small;
+}
+    
 
 aside{
+    display: flex;
+    height: 80vh;
+}
+
+.divMuñeca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.divMuñeca img{
+    height: 100%;
+    width: 100%;
+}
+/* ---------------- Clases  footer --------------- */
+.partNine {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: #1b2a4e;
+    display: grid;
+    grid-template-columns:  2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 9fr 1fr;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
     
+
+}
+.partNine a {
+    text-decoration:none;
+}
+.logo-footer {
+    position: absolute;
+    top: 22%;
+    margin-left: 10%;  
+}
+
+
+.social-networks p {
+    line-height: 35px;
+    position: absolute;
+    top: 33%;
+    left: 10%;  
+    color: #7b7a9f;
+    
+}
+
+.footer-element {
+    margin-top: 40%;
+    color: white;         
+}
+
+
+.wrapper{
+    display:inline-flex;
+    margin-left: 27%;
+    margin-top: 13%;
+}
+.wrapper .icon{
+    margin: 0 8px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    position: relative;
+    z-index:2;
+}
+.wrapper .icon span{
+    position:relative;
+    z-index:2;
+    height: 40px;
+    width: 40px;
+    display:block;
+    background: #293f73;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius:50%;
+    text-align:center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon  i{
+    font-size:15px;
+    line-height:40px;
+}
+    
+.footer-element ul {
+    position: relative;
+    top: 5%;    
+}
+.footer-element ul li  {
+    
+    list-style:none; 
+}
+.footer-element ul li a  {
+    line-height: 2.5;
+    color: #7b7a9f;
+}
+.quic-links {
+   
+    margin-left: 40%;
+
+}
+.about {
+    position: relative;
+    left: 15%;
+}
+.about2 {
+    position: relative;
+    left: -3%;
+}
+.help {
+    position: relative;
+    right: 30%;
+    
+}
+.copyright {
+    border-top: 1px solid #223461;
+    padding: 33px 0px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    position: relative;
+    font-size: 0.9em;
+    
+    
+}
+.copyright p{
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    color: #8686ab;
+    
+}
+.copyright-autor {
+    position: absolute;
+    top: 25%;
+    margin-left: 70%;
+    color: #7b7a9f;
+}  
+
+.copyright-autor2 {
+    position: absolute;
     color: white;
-    
+}  
+/* ------------------ end clases footer --------------- */
+
+
+.partTwo{
+    height: 100vh;
+    width: 100%;
 }
 
 
 
 
 
-@media(max-width:640px){
+@media(max-width:740px){
 
     .partOne{
         width: 100%;
-        height: 100vh;
+        height: max-content;
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: auto;   
+        position: relative;
+
     }
     .partOne::before{
         content:"";
@@ -89,18 +361,69 @@ aside{
 
         grid-column-start: 1;
         grid-column-end: -1;
+        z-index: 1;
+        
+    }
+
+    
+    nav ul{
+
+        display: none;
     }
     
     section{
-
+        display: flex;
         grid-column-start: 1;
         grid-column-end: -1;
+
+    }
+
+    .titule-sectionOne{
+        position: absolute;
+        top:20vh;
+        left: 7%;
+        font-size: 3em;
+    
     }
     
-    aside{
+    .p-sectionOne {
+        position: absolute;
+        top: 52vh;
+        left: 7%;
+        font-size: 1em;
+    
+    }
 
+    .report {
+        position: absolute;
+        width: 315px;
+        height: 75px;
+        top:72vh;
+        left: 7%;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    .asideOne{
+        
         grid-column-start: 1;
         grid-column-end: -1;
+        height: max-content;
+        
+    }
+
+    .divMuñeca{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+        
+    }
+    .divMuñeca img{
+        height:100%;
+        
+        
     }
 
 }
