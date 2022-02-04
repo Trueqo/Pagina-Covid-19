@@ -55,7 +55,6 @@ fetch(lista)
     let selectPaises = document.getElementById('selectPaises')
     selectPaises.addEventListener('change',(e)=>{
 
-        
         P1.innerHTML = `<div class="dataCountry"><h6>${'Total Cases'}</h6> <p >${data[selectPaises.value].cases}</p></div>`
         P2.innerHTML = `<div class="dataCountry"><h6>${'Total Recovered'}</h6> <p >${data[selectPaises.value].recovered}</p></div>`
         P3.innerHTML = `<div class="dataCountry"><h6>${'New Cases'}</h6> <p >${data[selectPaises.value].todayCases}</p></div>`
