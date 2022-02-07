@@ -1,70 +1,57 @@
-/* ---------------- Clases  part Seven --------------- */
-.partSeven {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.partSeven{
+    
     width: 100%;
-    height: 130vh;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "text-partSeven celular-partSeven";
-    column-gap: 5px;
+    height: 100vh;
     display: flex;
-
-}
-.section-partSeven {
-    width: 80%;
-    height: 50%;
+    align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #1e0c9d, #06cdec);
-    /* padding: 100px 130px; */
-    border-radius: 10px;
-    margin-top: 100px;
     
-    
+                        
 }
 
-.celular-partSeven {
+.contenedorSeven{
     
-    position: absolute;
-    /* top: 10%;
-    left: 65%; */
-    
-    background-color: #1e0c9d;
-}
+    width: 67%;
+    height: 60vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    grid-template-areas:"section7 aside7";
+    background-image: linear-gradient(to right, rgb(23, 17, 135), rgb(0, 247, 255));
+    border-radius: 8px;
+}       
 
 
-.text-partSeven {
+.section7{
     
-    position: absolute;
-    left: 1%;
-
-    font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: red;
+    display: flex;
+    width: 100%;
+    grid-area: section7;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 20%;
+
     
 }
 
-.text-partSeven h2{
-                         
-    bottom: 5%;
-    font-size: 3em;
-    letter-spacing: 1px;
-    
+.section7 button{
+    margin: 20px 0px 0px 0px;
+    width: 40%;
 }
 
-.text-partSeven p{
-    position: absolute;
-    left: 25%;
-    top: 30%;
-    
-    
-}
-
-.botton-partSeven {
-    position: absolute;
-    left: 21%;
-    top: 50%;
+.DOWNLOAD{
+    font-family: 'Poppins', sans-serif;
     background-color: white;
     text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
     padding: 20px 40px;
     color: #111;
     font-weight: 600;
@@ -74,13 +61,119 @@
     border-radius: 3%;
 }
 
-@media (max-width: 740px){
-    .partSeven{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 3px;
-        
-        /* grid-auto-rows:"celular-partSeven"  auto 0.5fr; */
-    }
+.aside7{
+    width: 100%;
+    
+    grid-area: aside7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.aside7 img{
+    
+    
+    height: 400px;
+    position: absolute;
+    margin-top: -5.5rem;
+}
+
+.imgPart7{
+    max-height: max-content;
+    max-width: max-content;
     
 }
+
+@media(max-width:740px) {
+
+    .contenedorSeven{
+        width: 90%;
+        height: 135vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        display: grid;
+        grid-template-areas:"section7"
+                            "aside7";
+        background-image: linear-gradient(to right, rgb(23, 17, 135), rgb(0, 247, 255));
+        border-radius: 8px;
+    }
+    
+
+    .section7{
+    
+        color: white;
+        display: flex;
+        width: 100%;
+        height: 50%;
+        grid-area: section7;
+        flex-direction: column;
+        justify-content:flex-start;
+        margin: 3% 0px 0px 5%;
+        
+        
+    }
+
+    .tituloPart7{
+        font-size: xx-large;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    
+    .parrafoPart7{
+        margin-top: 20px;
+        font-size: large;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    
+
+    .btn7{
+        
+        
+        border-radius:3px;
+        
+    }
+    
+    .DOWNLOAD{
+        font-family: 'Poppins', sans-serif;
+        background-color: white;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px 40px;
+        color: #111;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 3%;
+    }
+
+    
+
+    .aside7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+    
+    }
+
+    .aside7 img{
+        
+        height: 50%;
+        width: 40%;
+        
+    }
+
+    
+
+    
+    
+}
+

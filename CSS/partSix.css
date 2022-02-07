@@ -7,32 +7,55 @@
 }
 
 .partSix {
-    position: relative;
-    width: 60%;
+    display: grid;
+    width: 100%;
     height: 80vh; 
     color: #293f73;
+    z-index: 5;
     font-family: 'Poppins', sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"titulosPartSix"
+                        "imgPartSix";
 }
+
+.titulosPartSix{
+    grid-area: titulosPartSix ;
+    width: 100%;
+    height: min-content;
+    display: flexbox;
+    justify-content: center;
+    
+}
+
+
 .partSix h5   {
-    position: absolute;
-    left:  82%;
-    top: 20%;
-    font-size: 18px;
-    font-weight: 600;
-}
-.partSix h2 {
-    position: absolute;
-    right: -17%;
-    top: 25%;
-    font-size: 3.1em;
-    font-weight: 700;
+    
+    font-size: 1.1em;
     text-align: center;
     
 }
+.partSix h2 {
+    
+    
+    font-size: 3.1em;
+    text-align: center;
+    
+    
+}
+
+.imgPartSix{
+    grid-area: imgPartSix;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .img-partSix {
-    width: 120%;
+    width: 100%;
     position: absolute;
-    top: 57%;
-    left: 25%;  
+    
     
 }

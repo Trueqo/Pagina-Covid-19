@@ -36,14 +36,17 @@
 
 
 header{
-    
+    width: 100%;
     color: black;
     grid-column-start: 1;
     grid-column-end: -1;
     height: 20vh;
+    z-index: 1;
     
     
 }
+
+
 
 nav {
     display: flex;
@@ -51,6 +54,7 @@ nav {
     align-items: center;
     height: 100%;
     width: 100%;
+    
     
 
 }
@@ -194,7 +198,7 @@ aside{
 
 .divMuñeca img{
     height: 100%;
-    width: 100%;
+    width: 50%;
 }
 
 
@@ -202,10 +206,7 @@ aside{
 
 
 
-.partTwo{
-    height: 100vh;
-    width: 100%;
-}
+
 
 
 
