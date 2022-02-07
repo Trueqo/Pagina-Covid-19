@@ -4,12 +4,13 @@
     box-sizing: border-box; 
 }
 
-@font-face {
+/* @font-face {
     font-family: genera;
-    src: url(../font/Genera.ttf);
+    src: url(../fonts/Genera.ttf);
     font-family: generaLight;
-    src: url(../font/Genera-AltLight.ttf);
-}
+    src: url(../fonts/Genera-AltLight.ttf);
+} */
+
 
 .partTwo{
     width: 100%;
@@ -17,11 +18,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 200px;
+    background-color: red;
 }
 .contain{
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     background-color:rgb(240 248 255);
     position: relative;
     display: flex;
@@ -41,11 +42,11 @@
 .partTwo .titulo{
     position: relative;
     width: 100%;
-    height: 35%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    
     background-color: rgb(240 248 255);
     
 }

@@ -130,6 +130,7 @@
 
 /*cabecera*/
 header{
+<<<<<<< HEAD
     
     grid-column-start: 1;
     grid-column-end: -1;
@@ -150,8 +151,20 @@ nav.abajo .opc{
 
 nav.abajo .opcT{
     color: #fff;
+=======
+    width: 100%;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 20vh;
+    z-index: 1;
+    
+    
+>>>>>>> 28f61cc30abca226f97e1495d51bd7f8ab4af3ad
 }
  
+
+
 
 nav {
     display: flex;
@@ -160,6 +173,11 @@ nav {
     align-items: center;
     height: 20%;
     width: 100%;
+<<<<<<< HEAD
+=======
+    
+    
+>>>>>>> 28f61cc30abca226f97e1495d51bd7f8ab4af3ad
 
 }
 
@@ -303,8 +321,12 @@ aside{
 
 .divMuñeca img{
     height: 100%;
-    width: 100%;
+    width: 50%;
 }
+
+
+
+
 /* ---------------- Clases  footer --------------- */
 .partNine {
     display: flex;
@@ -438,10 +460,7 @@ aside{
 /* ------------------ end clases footer --------------- */
 
 
-.partTwo{
-    height: 100vh;
-    width: 100%;
-}
+
 
 
 
