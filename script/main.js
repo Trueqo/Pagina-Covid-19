@@ -51,7 +51,7 @@ fetch(lista)
 .then(response=>response.json())
 .then(data =>{
 
-    let P1 = document.getElementById('P1')
+    
     let selectPaises = document.getElementById('selectPaises')
     selectPaises.addEventListener('change',(e)=>{
 
