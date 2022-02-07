@@ -38,7 +38,7 @@
 
 }
 
-.titulo{
+.partTwo .titulo{
     position: relative;
     width: 100%;
     height: 35%;
@@ -67,26 +67,11 @@
     transform: scale(1.2);
 }
 
-.imagen{
+.partTwo .imagen{
     width: 40%;
     height: 40%;
     padding: 10px;
     
-}
-
-.contenedor {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: auto;
-    align-items: center;
-    background-color: #f0f0f0;
-    
-}
-
-.partThree .titulo{
-    background-color: #f0f0f0;
 }
 
 .imagen-item{
@@ -101,26 +86,8 @@
 
     
 }
-.imagen-item:hover{
-    transform: scale(1.1);
 
-}
-.contenedor .imagen{
-    z-index: 3;
-    right: 30px;
-}
-
-.rombo{
-    width: 700px;
-    height: 200px;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    bottom: 150px;
-    z-index: 1;
-   
-}
-h5{
+.partTwo h5{
     text-align: left;
     font-size: 1.3rem;
     color: #121158;
@@ -128,21 +95,22 @@ h5{
     font-family: genera;
     
 }
-.titulo h5{
+
+.partTwo .titulo h5{
     font-size: 1rem;
     color: #121158;
     padding: .5rem;
     font-family: genera;
 }
 
-h1{
+.partTwo h1{
     text-align: center;
     font-size: 3rem;
     font-family: genera;
     color: #121158c0;
 }
 
-p{
+.partTwo p{
     color: #515184;
     padding: .4rem;
     font-family: generaLight;
